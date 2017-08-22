@@ -13,6 +13,10 @@
 		283C67A11F4C72EE003EB143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C679F1F4C72EE003EB143 /* Main.storyboard */; };
 		283C67A31F4C72EE003EB143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C67A21F4C72EE003EB143 /* Assets.xcassets */; };
 		283C67A61F4C72EE003EB143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C67A41F4C72EE003EB143 /* LaunchScreen.storyboard */; };
+		283C67B01F4C7382003EB143 /* BasicUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67AF1F4C7382003EB143 /* BasicUnit.m */; };
+		283C67B41F4C7461003EB143 /* FlyWeightImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67B31F4C7461003EB143 /* FlyWeightImageFactory.m */; };
+		283C67B71F4C7776003EB143 /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67B61F4C7776003EB143 /* Dragon.m */; };
+		283C67BA1F4C77E5003EB143 /* Goblin.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C67B91F4C77E5003EB143 /* Goblin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		283C67A21F4C72EE003EB143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283C67A51F4C72EE003EB143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283C67A71F4C72EE003EB143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283C67AE1F4C7382003EB143 /* BasicUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicUnit.h; sourceTree = "<group>"; };
+		283C67AF1F4C7382003EB143 /* BasicUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicUnit.m; sourceTree = "<group>"; };
+		283C67B21F4C7461003EB143 /* FlyWeightImageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyWeightImageFactory.h; sourceTree = "<group>"; };
+		283C67B31F4C7461003EB143 /* FlyWeightImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyWeightImageFactory.m; sourceTree = "<group>"; };
+		283C67B51F4C7776003EB143 /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		283C67B61F4C7776003EB143 /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
+		283C67B81F4C77E5003EB143 /* Goblin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goblin.h; sourceTree = "<group>"; };
+		283C67B91F4C77E5003EB143 /* Goblin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goblin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		283C67951F4C72EE003EB143 /* Patterns_19_Flyweight */ = {
 			isa = PBXGroup;
 			children = (
+				283C67B11F4C7426003EB143 /* HelpersClasses */,
+				283C67AD1F4C7365003EB143 /* Models */,
 				283C67991F4C72EE003EB143 /* AppDelegate.h */,
 				283C679A1F4C72EE003EB143 /* AppDelegate.m */,
 				283C679C1F4C72EE003EB143 /* ViewController.h */,
@@ -77,6 +91,28 @@
 				283C67971F4C72EE003EB143 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		283C67AD1F4C7365003EB143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				283C67AE1F4C7382003EB143 /* BasicUnit.h */,
+				283C67AF1F4C7382003EB143 /* BasicUnit.m */,
+				283C67B51F4C7776003EB143 /* Dragon.h */,
+				283C67B61F4C7776003EB143 /* Dragon.m */,
+				283C67B81F4C77E5003EB143 /* Goblin.h */,
+				283C67B91F4C77E5003EB143 /* Goblin.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		283C67B11F4C7426003EB143 /* HelpersClasses */ = {
+			isa = PBXGroup;
+			children = (
+				283C67B21F4C7461003EB143 /* FlyWeightImageFactory.h */,
+				283C67B31F4C7461003EB143 /* FlyWeightImageFactory.m */,
+			);
+			name = HelpersClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283C67B71F4C7776003EB143 /* Dragon.m in Sources */,
+				283C67B01F4C7382003EB143 /* BasicUnit.m in Sources */,
+				283C67B41F4C7461003EB143 /* FlyWeightImageFactory.m in Sources */,
 				283C679E1F4C72EE003EB143 /* ViewController.m in Sources */,
 				283C679B1F4C72EE003EB143 /* AppDelegate.m in Sources */,
 				283C67981F4C72EE003EB143 /* main.m in Sources */,
+				283C67BA1F4C77E5003EB143 /* Goblin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
